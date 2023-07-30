@@ -6,3 +6,7 @@ export interface IButton {
 export interface IButtonCollaps extends IButton {
   toggler: boolean
 }
+
+export interface IButtonNav extends IButton {
+  route: string
+}
