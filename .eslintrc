@@ -6,7 +6,26 @@
     "rules": {
       "no-console":"warn",
       "no-alert":"warn",
-      "@typescript-eslint/no-unused-vars":"warn",
+      "no-var":"error",
+      "max-depth": ["warn",4],
+      "comma-dangle": "off",
+      "implicit-arrow-linebreak": ["warn", "beside"],
+      "semi": "off",
+      "quotes": ["error", "single"],
+      "no-plusplus": "off",
+      "no-shadow": ["error", { "builtinGlobals": true, "hoist": "functions", "allow": [], "ignoreOnInitialization": false }],
+      "function-paren-newline": "off",
+      "arrow-body-style": "off",
+       "@typescript-eslint/no-unused-vars":"warn",
+       "react/function-component-definition": [
+        2,
+        {
+          "namedComponents": "arrow-function"
+        }
+      ],
+      "react/destructuring-assignment":[0],
+      "react/prop-types": [0],
+      "react-hooks/rules-of-hooks": "error",
       "react-hooks/exhaustive-deps": "off"
     }
   }
