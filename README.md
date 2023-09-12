@@ -12,14 +12,14 @@
 
   Было принято решение выполнить данные задачи на `ReactJS` используя `React-Ruter-Dom`, в виде ссылок навигации по задачам
   
-  
- ![Вид панели навигации по задачам](./public/img/screenshots/nav-panel.png)
+## Вид панели навигации по задачам
+ ![Вид панели навигации по задачам](https://github.com/OlegLuppov/test-for-amo-crm/blob/master/public/img/scrishots/nav-panel.png)
 
 ## Быстрый старт
 
 1. Клонировать удаленный репозиторий
 2. Установить npm зависимости [`npm install`](https://docs.npmjs.com/cli/install)
-3. Запустить `dev server` в режиме разработки
+3. Запустить `dev server` в режиме разработки выполнив команду `npm run dev`
 4. port 3000 (откроется сам)
 
    
