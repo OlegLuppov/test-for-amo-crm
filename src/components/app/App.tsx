@@ -11,6 +11,7 @@ const App: React.FC = () => {
 			<div className='container'>
 				<NavBar />
 				<Routes>
+					<Route element={<TaskOne />} path='/' />
 					<Route element={<TaskOne />} path='task_1' />
 					<Route element={<TaskTwo />} path='task_2' />
 				</Routes>
