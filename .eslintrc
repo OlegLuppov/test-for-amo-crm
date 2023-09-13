@@ -13,7 +13,7 @@
       "semi": "off",
       "quotes": ["error", "single"],
       "no-plusplus": "off",
-      "no-shadow": ["error", { "builtinGlobals": true, "hoist": "functions", "allow": [], "ignoreOnInitialization": false }],
+      "no-shadow":"off" ,
       "function-paren-newline": "off",
       "arrow-body-style": "off",
        "@typescript-eslint/no-unused-vars":"warn",
@@ -26,6 +26,7 @@
       "react/destructuring-assignment":[0],
       "react/prop-types": [0],
       "react-hooks/rules-of-hooks": "error",
-      "react-hooks/exhaustive-deps": "off"
+      "react-hooks/exhaustive-deps": "off",
+      "testing-library/no-debugging-utils":"off"
     }
   }

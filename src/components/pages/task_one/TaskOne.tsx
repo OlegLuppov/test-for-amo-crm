@@ -17,22 +17,24 @@ export const TaskOne: React.FC = () => {
 		setButtonToggler(!buttonToggler)
 	}
 
+	let timer: NodeJS.Timeout
+
+	const tickTockTimer = (seconds: number) => {
+		timer = setTimeout(() => {
+			tickTockTimer(seconds)
+		}, 1000)
+
+		// метод formatedSecondInTime принимает секунды в виде строки и возвращает время (Лучше бы использовать momentJS библиотеку конечно если постоянно нужны конвертации)
+		const time = formatedSecondInTime(+seconds)
+
+		setTimerValue(time)
+
+		seconds--
+
+		if (seconds < 0) clearTimeout(timer)
+	}
+
 	useEffect(() => {
-		let timer: NodeJS.Timeout
-		const tickTockTimer = (seconds: number) => {
-			timer = setTimeout(() => {
-				tickTockTimer(seconds)
-			}, 1000)
-
-			// метод formatedSecondInTime принимает секунды в виде строки и возвращает время (Лучше бы использовать momentJS библиотеку конечно если постоянно нужны конвертации)
-			const time = formatedSecondInTime(+seconds)
-
-			setTimerValue(time)
-
-			seconds--
-
-			if (seconds < 0) clearTimeout(timer)
-		}
 		if (secondsValue === '' || +secondsValue === 0) {
 			setTimerValue('00:00:00')
 			return
